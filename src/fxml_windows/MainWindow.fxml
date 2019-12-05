@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="274.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+    <children>
+        <Button layoutX="346.0" layoutY="211.0" mnemonicParsing="false" onAction="#connectBD" prefHeight="37.0" prefWidth="142.0" text="CONNECT BD" />
+        <Button layoutX="33.0" layoutY="19.0" mnemonicParsing="false" onAction="#create" prefHeight="37.0" prefWidth="142.0" text="CREATE" />
+        <Button layoutX="33.0" layoutY="86.0" mnemonicParsing="false" onAction="#read" prefHeight="37.0" prefWidth="142.0" text="READ" />
+        <Button layoutX="33.0" layoutY="149.0" mnemonicParsing="false" onAction="#update" prefHeight="37.0" prefWidth="142.0" text="UPDATE" />
+        <Button layoutX="33.0" layoutY="210.0" mnemonicParsing="false" onAction="#delete" prefHeight="37.0" prefWidth="142.0" text="DELETE" />
+        <TextField fx:id="txtHost" layoutX="233.0" layoutY="77.0" promptText="Host" />
+        <TextField fx:id="txtUser" layoutX="233.0" layoutY="122.0" promptText="User" />
+        <TextField fx:id="txtDatabase" layoutX="233.0" layoutY="167.0" prefHeight="26.0" prefWidth="368.0" promptText="Database" />
+        <TextField fx:id="txtPort" layoutX="429.0" layoutY="77.0" promptText="Port" />
+        <TextField fx:id="txtPassword" layoutX="429.0" layoutY="122.0" promptText="Password" />
+        <CheckBox fx:id="idCkboxMySQL" layoutX="223.0" layoutY="28.0" mnemonicParsing="false" selected="false" text="MySQL" onAction="#ckboxMySQL" />
+<!--        <CheckBox fx:id="idCkboxPostgreSQL" layoutX="315.0" layoutY="28.0" mnemonicParsing="false" text="PostgreSQL" onAction="#ckboxPostgreSQL"/>-->
+<!--        <CheckBox fx:id="idCkboxMongDB" layoutX="436.0" layoutY="28.0" mnemonicParsing="false" text="MongoDB" onAction="#ckboxMongDB"/>-->
+<!--        <CheckBox fx:id="idCkboxOracleDB" layoutX="545.0" layoutY="28.0" mnemonicParsing="false" text="OracleDB" onAction="#ckboxOracleDB"/>-->
+    </children>
+</AnchorPane>
